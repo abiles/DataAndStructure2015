@@ -37,9 +37,13 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	printf("%d", count);
 
+
 	getchar();
 	getchar();
 
+	delete node1;
+	delete node2;
+	delete node3;
 
 
 	return 0;
