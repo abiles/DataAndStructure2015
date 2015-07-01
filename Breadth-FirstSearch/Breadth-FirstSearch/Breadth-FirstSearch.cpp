@@ -1,4 +1,4 @@
-// Breadth-FirstSearch.cpp : ÄÜ¼Ö ÀÀ¿ë ÇÁ·Î±×·¥¿¡ ´ëÇÑ ÁøÀÔÁ¡À» Á¤ÀÇÇÕ´Ï´Ù.
+ï»¿// Breadth-FirstSearch.cpp : ì½˜ì†” ì‘ìš© í”„ë¡œê·¸ë¨ì— ëŒ€í•œ ì§„ì…ì ì„ ì •ì˜í•©ë‹ˆë‹¤.
 //
 
 #include "stdafx.h"
@@ -21,8 +21,8 @@ struct Graph
 };
 
 
-// GraphÀÇ source¸¸ µé¾î ÀÖ´Â queue°¡ ÃÊ±â °ªÀ¸·Î µé¾î¿Í ÀÖ´Ù°í °¡Á¤
-// sourceÀÇ isPushed¸¦ true·Î ÇØÁà¾ß ÇÔ
+// Graphì˜ sourceë§Œ ë“¤ì–´ ìˆëŠ” queueê°€ ì´ˆê¸° ê°’ìœ¼ë¡œ ë“¤ì–´ì™€ ìˆë‹¤ê³  ê°€ì •
+// sourceì˜ isPushedë¥¼ trueë¡œ í•´ì¤˜ì•¼ í•¨
 
 void BFS(std::queue<Node*>* queue)
 {
