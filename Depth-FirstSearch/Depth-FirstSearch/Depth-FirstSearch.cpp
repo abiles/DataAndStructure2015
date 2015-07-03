@@ -79,8 +79,8 @@ void depthFirstSearch(Graph* graph)
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	Graph*graph = new Graph;
-	Node*nodes = new Node[7];
+	Graph* graph = new Graph;
+	Node* nodes = new Node[7];
 
 	for (int i = 0; i < 7; ++i)
 	{
