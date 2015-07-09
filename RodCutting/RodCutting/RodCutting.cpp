@@ -60,15 +60,16 @@ int GetMaxBottomUp(int* arr, int n)
 	{
 		maxValue = 0;
 
-		for (int j = 1; j <= n; j++)
+		for (int j = 1; j <= i; j++)
 		{
-			tmpValue = arr[i] + resultArr[n - i];
+			tmpValue = arr[j] + resultArr[i - j];
 
 			if (tmpValue > maxValue)
 			{
 				maxValue = tmpValue;
 			}
 		}
+
 		resultArr[i] = maxValue;
 	}
 
@@ -89,6 +90,8 @@ int _tmain(int argc, _TCHAR* argv[])
 		resultArr[i] = -1;
 	}
 	printf_s("maxValue With TopDown = %d\n", GetMaxValueTopDown(valueArr, resultArr, valueArrSize));
+
+	printf_s("maxValue With BottomUp = %d\n", GetMaxBottomUp(valueArr, valueArrSize));
 
 	getchar();
 	getchar();
